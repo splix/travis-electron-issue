@@ -1,0 +1,18 @@
+os:
+  - osx
+  - linux
+  - windows
+
+language: node_js
+
+node_js:
+  - 12
+
+before_install:
+  - node -v
+  - npm -v
+  - yarn global bin
+
+script:
+  - yarn global add electron@7.1.14
+  - electron --version
