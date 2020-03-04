@@ -15,10 +15,11 @@ node_js:
 before_install:
   - node -v
   - npm -v
-  - npm install -g yarn
-  - yarn global bin
-  - if [[ ${TRAVIS_OS_NAME} == "windows" ]]; then export PATH=/c/Users/travis/AppData/Local/Yarn/bin:$PATH; fi;
+#  - npm install -g yarn
+#  - yarn global bin
+# - if [[ ${TRAVIS_OS_NAME} == "windows" ]]; then export PATH=/c/Users/travis/AppData/Local/Yarn/bin:$PATH; fi;
 
 script:
-  - yarn global add electron@7.1.14
+#  - yarn global add electron@7.1.14
+  - npm install -g electron@7.1.14
   - electron --version
