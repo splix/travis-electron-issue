@@ -5,12 +5,17 @@ os:
 
 language: node_js
 
+env:
+  global:
+    - ELECTRON_RUN_AS_NODE=true
+
 node_js:
   - 12
 
 before_install:
   - node -v
   - npm -v
+  - npm install -g yarn
   - yarn global bin
 
 script:
