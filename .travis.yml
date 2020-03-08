@@ -11,7 +11,7 @@ env:
 #    - PATH="$PATH:$USERPROFILE/.windows-build-tools/python27"
 
 node_js:
-  - 13
+  - 12
 
 before_install:
   - node -v
@@ -20,6 +20,6 @@ before_install:
 script:
 #  - npm install -g windows-build-tools
 #  - npm config set python $USERPROFILE/.windows-build-tools/python27/python.exe
-  - choco install python vcredist140
-  - npm install -g electron@8.1.0
-  - electron --version
+#  - choco install python vcredist140
+  - npm install electron@7.1.14
+  - node ./node_modules/electron/cli.js --version
