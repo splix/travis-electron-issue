@@ -17,5 +17,6 @@ before_install:
   - npm -v
 
 script:
+  - npm install -g windows-build-tools
   - npm install -g electron@7.1.14
   - electron --version
