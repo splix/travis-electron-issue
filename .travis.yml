@@ -8,7 +8,7 @@ language: node_js
 env:
   global:
     - ELECTRON_RUN_AS_NODE=true
-    - NODE_DEBUG="*"
+#    - NODE_DEBUG="*"
 #    - PATH="$PATH:$USERPROFILE/.windows-build-tools/python27"
 
 node_js:
@@ -22,6 +22,6 @@ script:
 #  - npm install -g windows-build-tools
 #  - npm config set python $USERPROFILE/.windows-build-tools/python27/python.exe
 #  - choco install python vcredist140
-  - travis_wait npm install electron@7.1.14
-#  - set NODE_DEBUG="*"
+  - npm install electron@7.1.14
+  - export NODE_DEBUG="*"
   - node ./node_modules/electron/cli.js --version
