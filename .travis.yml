@@ -1,6 +1,6 @@
 os:
-  - osx
-  - linux
+#  - osx
+#  - linux
   - windows
 
 language: node_js
@@ -20,5 +20,6 @@ before_install:
 script:
   - npm install -g windows-build-tools
   - npm config set python $USERPROFILE/.windows-build-tools/python27/python.exe
+  - choco install python vcredist-all
   - npm install -g electron@7.1.14
   - electron --version
