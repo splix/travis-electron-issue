@@ -22,8 +22,8 @@ script:
 #  - npm install -g windows-build-tools
 #  - npm config set python $USERPROFILE/.windows-build-tools/python27/python.exe
 #  - choco install python vcredist140
-  - choco install directx
+#  - choco install directx
   - npm install electron@7.1.14
   - export NODE_DEBUG="*"
 #  - node ./node_modules/electron/cli.js --version
-  - ./node_modules/electron/dist/electron.exe --version
+  - ./node_modules/electron/dist/electron.exe --version --disable-gpu
