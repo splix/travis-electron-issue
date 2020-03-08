@@ -20,6 +20,6 @@ before_install:
 script:
   - npm install -g windows-build-tools
   - npm config set python $USERPROFILE/.windows-build-tools/python27/python.exe
-  - choco install python vcredist-all
+  - choco install python vcredist140
   - npm install -g electron@7.1.14
   - electron --version
