@@ -24,4 +24,5 @@ script:
 #  - choco install python vcredist140
   - npm install electron@7.1.14
   - export NODE_DEBUG="*"
-  - node ./node_modules/electron/cli.js --version
+#  - node ./node_modules/electron/cli.js --version
+  - ./node_modules/electron/dist/electron.exe --version
