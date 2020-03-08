@@ -8,6 +8,7 @@ language: node_js
 env:
   global:
     - ELECTRON_RUN_AS_NODE=true
+    - PATH="$PATH:$USERPROFILE/.windows-build-tools/python27"
 
 node_js:
   - 12
@@ -18,5 +19,6 @@ before_install:
 
 script:
   - npm install -g windows-build-tools
+  - npm config set python $USERPROFILE/.windows-build-tools/python27/python.exe
   - npm install -g electron@7.1.14
   - electron --version
