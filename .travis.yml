@@ -8,6 +8,7 @@ language: node_js
 env:
   global:
     - ELECTRON_RUN_AS_NODE=true
+    - NODE_DEBUG="*"
 #    - PATH="$PATH:$USERPROFILE/.windows-build-tools/python27"
 
 node_js:
